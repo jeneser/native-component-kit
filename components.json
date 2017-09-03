@@ -1,0 +1,6 @@
+{
+  "carousel": {
+    "easy": "./components/carousel/easy/index",
+    "medium": "./components/carousel/medium/index"
+  }
+}
