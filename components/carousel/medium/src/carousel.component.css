@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Carousel medium */
+.carousel-medium {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.carousel-medium__container {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-medium__list {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 2200px;
+
+  transform: translate3d(-400px, 0, 0);
+}
+
+/* Clear */
+.carousel-medium__list::before,
+.carousel-medium__list::after {
+  display: table;
+  content: '';
+}
+
+.carousel-medium__list::after {
+  clear: both;
+}
+
+/* Item */
+.carousel-medium__item {
+  float: left;
+  width: 400px;
+  height: 150px;
+}
+
+.carousel-medium__item:nth-child(2n+1) {
+  background-color: #d3dce6;
+}
+
+.carousel-medium__item:nth-child(2n) {
+  background-color: #99a9bf;
+}
+
+/* Arrow */
+.carousel-medium__arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+}
+
+.carousel-medium__arrow--left {
+  left: 16px;
+}
+
+.carousel-medium__arrow--right {
+  right: 16px;
+}
+
+.is-animating {
+  transition: transform .4s ease-in-out;
+}
